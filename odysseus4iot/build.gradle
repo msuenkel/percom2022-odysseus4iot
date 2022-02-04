@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	implementation 'org.postgresql:postgresql:42.3.2'
+	implementation 'com.google.code.gson:gson:2.8.9'
+}
+
+task(runOdysseus4iot, type: JavaExec) {
+    mainClass = 'odysseus4iot.main.Main'
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dfile.encoding=UTF-8']
+}
+
+task(runOdysseus4iotGQS, type: JavaExec) {
+    mainClass = 'odysseus4iot.deployment.GlobalQueryScript'
+    classpath = sourceSets.main.runtimeClasspath
+    allJvmArgs = ['-Dfile.encoding=UTF-8']
+}

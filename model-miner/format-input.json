@@ -1,0 +1,60 @@
+{
+	"request1": [
+		{
+			"sensor system": "Blaupunkt_BST-BNO055-DS000-14_NDOF_10_AO",
+			"labels": [
+				{
+					"label": "lying",
+					"acc_threh": 80
+				},
+				{
+					"label": "standing",
+					"acc_threh": 85
+				}
+			],
+			"maxsizeofbignode": 2844099,
+			"maxsizeof_ALL": 3344099,
+			"modelset_limit": 5
+		}
+	],
+	"request2": [
+		{
+			"sensor system": "Blaupunkt_BST-BNO055-DS000-14_NDOF_10_AO",
+			"labels": [
+				{
+					"label": "grazing",
+					"acc_threh": 92
+				},
+				{
+					"label": "standing",
+					"acc_threh": 85
+				}
+			],
+			"maxsizeofbignode": 1844299,
+			"maxsizeof_ALL": 2364099,
+			"modelset_limit": 4
+		}
+	],
+	"request3": [
+		{
+			"sensor system": "Blaupunkt_BST-BNO055-DS000-14_NDOF_10_AO",
+			"labels": [
+				{
+					"label": "grazing",
+					"acc_threh": 90
+				},
+				{
+					"label": "drinking",
+					"acc_threh": 82
+				},
+				{
+					"label": "standing",
+					"acc_threh": 79
+				}
+			],
+			"maxsizeofbignode": 2234299,
+			"maxsizeof_ALL": 2969899,
+			"modelset_limit": 6
+		}
+	]
+}

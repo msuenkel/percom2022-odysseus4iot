@@ -1,0 +1,13 @@
+* flask_server:
+flask_restful
+request 
+response
+datetime
+
+* api_request:
+request
+json
+
+* database_connector:
+psycopg2
+config

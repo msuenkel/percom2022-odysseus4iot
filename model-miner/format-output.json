@@ -1,0 +1,3583 @@
+{
+    "response_case10-10_181674527.0": [
+        {
+            "Modelset_name": "15875_24179_9925",
+            "avg_accuracy": 0.964,
+            "query_sharing_level": 0.88,
+            "final_score": 0.964,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15875,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9588,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 2066776,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 24179,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9551,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "FreqEntrpy",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "size": 21943,
+                    "algorithm": "Neural_Network"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15875_24179_44089",
+            "avg_accuracy": 0.9638,
+            "query_sharing_level": 0.88,
+            "final_score": 0.9638,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15875,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9588,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 2066776,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 24179,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9551,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "FreqEntrpy",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "size": 21943,
+                    "algorithm": "Neural_Network"
+                },
+                {
+                    "model_id": 44089,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9708,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Sliding",
+                    "window_size": "10000",
+                    "window_stride": "25",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "stdev",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "Kurt",
+                                "type": "double",
+                                "order": 5
+                            },
+                            {
+                                "function": "Skew",
+                                "type": "double",
+                                "order": 6
+                            },
+                            {
+                                "function": "Energy",
+                                "type": "double",
+                                "order": 7
+                            },
+                            {
+                                "function": "PeakFreq",
+                                "type": "double",
+                                "order": 8
+                            },
+                            {
+                                "function": "FreqEntrpy",
+                                "type": "double",
+                                "order": 9
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 10
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 11
+                            },
+                            {
+                                "function": "stdev",
+                                "type": "double",
+                                "order": 12
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 13
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 14
+                            },
+                            {
+                                "function": "Kurt",
+                                "type": "double",
+                                "order": 15
+                            },
+                            {
+                                "function": "Skew",
+                                "type": "double",
+                                "order": 16
+                            },
+                            {
+                                "function": "Energy",
+                                "type": "double",
+                                "order": 17
+                            },
+                            {
+                                "function": "PeakFreq",
+                                "type": "double",
+                                "order": 18
+                            },
+                            {
+                                "function": "FreqEntrpy",
+                                "type": "double",
+                                "order": 19
+                            }
+                        ]
+                    },
+                    "size": 2461816,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15945_24179_9925",
+            "avg_accuracy": 0.9635,
+            "query_sharing_level": 0.88,
+            "final_score": 0.9635,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15945,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9568,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "size": 2078167,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 24179,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9551,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "FreqEntrpy",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "size": 21943,
+                    "algorithm": "Neural_Network"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        }
+    ],
+    "response_case9-10_181909823.0": [
+        {
+            "Modelset_name": "15640_23764_9925",
+            "avg_accuracy": 0.9628,
+            "query_sharing_level": 0.92,
+            "final_score": 0.9585,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15640,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9561,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 5
+                            }
+                        ]
+                    },
+                    "size": 2433616,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 23764,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9528,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "size": 22342,
+                    "algorithm": "Neural_Network"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15640_23820_9925",
+            "avg_accuracy": 0.9627,
+            "query_sharing_level": 0.92,
+            "final_score": 0.9584,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15640,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9561,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 5
+                            }
+                        ]
+                    },
+                    "size": 2433616,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 23820,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9526,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "Energy",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "FreqEntrpy",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 5
+                            }
+                        ]
+                    },
+                    "size": 2755456,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15720_23764_9925",
+            "avg_accuracy": 0.9626,
+            "query_sharing_level": 0.92,
+            "final_score": 0.9583,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15720,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9552,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 5
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 6
+                            }
+                        ]
+                    },
+                    "size": 2431024,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 23764,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9528,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "size": 22342,
+                    "algorithm": "Neural_Network"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        }
+    ],
+    "response_case8-10_181520370.0": [
+        {
+            "Modelset_name": "15640_23764_9925",
+            "avg_accuracy": 0.9628,
+            "query_sharing_level": 0.92,
+            "final_score": 0.9542,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15640,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9561,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 5
+                            }
+                        ]
+                    },
+                    "size": 2433616,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 23764,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9528,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "size": 22342,
+                    "algorithm": "Neural_Network"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15640_23820_9925",
+            "avg_accuracy": 0.9627,
+            "query_sharing_level": 0.92,
+            "final_score": 0.9542,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15640,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9561,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 5
+                            }
+                        ]
+                    },
+                    "size": 2433616,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 23820,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9526,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "Energy",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "FreqEntrpy",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 5
+                            }
+                        ]
+                    },
+                    "size": 2755456,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15720_23764_9925",
+            "avg_accuracy": 0.9626,
+            "query_sharing_level": 0.92,
+            "final_score": 0.9541,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15720,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9552,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 5
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 6
+                            }
+                        ]
+                    },
+                    "size": 2431024,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 23764,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9528,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "size": 22342,
+                    "algorithm": "Neural_Network"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        }
+    ],
+    "response_case7-10_176490731.0": [
+        {
+            "Modelset_name": "15640_23764_9925",
+            "avg_accuracy": 0.9628,
+            "query_sharing_level": 0.92,
+            "final_score": 0.95,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15640,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9561,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 5
+                            }
+                        ]
+                    },
+                    "size": 2433616,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 23764,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9528,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "size": 22342,
+                    "algorithm": "Neural_Network"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15640_23820_9925",
+            "avg_accuracy": 0.9627,
+            "query_sharing_level": 0.92,
+            "final_score": 0.9499,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15640,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9561,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 5
+                            }
+                        ]
+                    },
+                    "size": 2433616,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 23820,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9526,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "Energy",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "FreqEntrpy",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 5
+                            }
+                        ]
+                    },
+                    "size": 2755456,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15720_23764_9925",
+            "avg_accuracy": 0.9626,
+            "query_sharing_level": 0.92,
+            "final_score": 0.9498,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 15720,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9552,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 5
+                            },
+                            {
+                                "function": "ThirdCpn",
+                                "type": "double",
+                                "order": 6
+                            }
+                        ]
+                    },
+                    "size": 2431024,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 23764,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.9528,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "RMS",
+                                "type": "double",
+                                "order": 1
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 2
+                            },
+                            {
+                                "function": "MCR",
+                                "type": "double",
+                                "order": 3
+                            }
+                        ]
+                    },
+                    "size": 22342,
+                    "algorithm": "Neural_Network"
+                },
+                {
+                    "model_id": 9925,
+                    "type": true,
+                    "labels": [
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9711,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "max",
+                                "type": "double",
+                                "order": 0
+                            },
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 3
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 4
+                            }
+                        ]
+                    },
+                    "size": 1391657,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        }
+    ],
+    "response_case6-10_166224152.0": [
+        {
+            "Modelset_name": "15305_5940",
+            "avg_accuracy": 0.9402,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9481,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15305,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9549,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 3163336,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5940,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9255,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 24730,
+                    "algorithm": "Neural_Network"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15860_6211",
+            "avg_accuracy": 0.9398,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9479,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15860,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9524,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2477968,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 6211,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9271,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 1818101,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15225_5896",
+            "avg_accuracy": 0.9388,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9473,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15225,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9546,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2995549,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5896,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9231,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2062242,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        }
+    ],
+    "response_case5-10_163677226.0": [
+        {
+            "Modelset_name": "15305_5940",
+            "avg_accuracy": 0.9402,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9501,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15305,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9549,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 3163336,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5940,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9255,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 24730,
+                    "algorithm": "Neural_Network"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15860_6211",
+            "avg_accuracy": 0.9398,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9499,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15860,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9524,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2477968,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 6211,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9271,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 1818101,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15225_5896",
+            "avg_accuracy": 0.9388,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9494,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15225,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9546,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2995549,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5896,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9231,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2062242,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        }
+    ],
+    "response_case4-10_152806819.0": [
+        {
+            "Modelset_name": "15305_5940",
+            "avg_accuracy": 0.9402,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9521,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15305,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9549,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 3163336,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5940,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9255,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 24730,
+                    "algorithm": "Neural_Network"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15860_6211",
+            "avg_accuracy": 0.9398,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9519,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15860,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9524,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2477968,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 6211,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9271,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 1818101,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15225_5896",
+            "avg_accuracy": 0.9388,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9515,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15225,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9546,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2995549,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5896,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9231,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2062242,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        }
+    ],
+    "response_case3-10_154674865.0": [
+        {
+            "Modelset_name": "15305_5940",
+            "avg_accuracy": 0.9402,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9541,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15305,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9549,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 3163336,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5940,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9255,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 24730,
+                    "algorithm": "Neural_Network"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15860_6211",
+            "avg_accuracy": 0.9398,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9539,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15860,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9524,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2477968,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 6211,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9271,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 1818101,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15225_5896",
+            "avg_accuracy": 0.9388,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9536,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15225,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9546,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2995549,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5896,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9231,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2062242,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        }
+    ],
+    "response_case2-10_154002704.0": [
+        {
+            "Modelset_name": "15305_5940",
+            "avg_accuracy": 0.9402,
+            "query_sharing_level": 0.96,
+            "final_score": 0.956,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15305,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9549,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 3163336,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5940,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9255,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 24730,
+                    "algorithm": "Neural_Network"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15860_6211",
+            "avg_accuracy": 0.9398,
+            "query_sharing_level": 0.96,
+            "final_score": 0.956,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15860,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9524,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2477968,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 6211,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9271,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 1818101,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15225_5896",
+            "avg_accuracy": 0.9388,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9558,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15225,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9546,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2995549,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5896,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9231,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2062242,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        }
+    ],
+    "response_case1-10_153094450.0": [
+        {
+            "Modelset_name": "15305_5940",
+            "avg_accuracy": 0.9402,
+            "query_sharing_level": 0.96,
+            "final_score": 0.958,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15305,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9549,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 3163336,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5940,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9255,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "mean",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 24730,
+                    "algorithm": "Neural_Network"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15860_6211",
+            "avg_accuracy": 0.9398,
+            "query_sharing_level": 0.96,
+            "final_score": 0.958,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15860,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9524,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2477968,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 6211,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9271,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "10000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 1818101,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "15225_5896",
+            "avg_accuracy": 0.9388,
+            "query_sharing_level": 0.96,
+            "final_score": 0.9579,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 15225,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9546,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2995549,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 5896,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9231,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag_gyrMag",
+                    "window_type": "Jumping",
+                    "window_size": "9000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ],
+                        "gyrMag": [
+                            {
+                                "function": "min",
+                                "type": "double",
+                                "order": 1
+                            },
+                            {
+                                "function": "IQR",
+                                "type": "double",
+                                "order": 2
+                            }
+                        ]
+                    },
+                    "size": 2062242,
+                    "algorithm": "Random_Forest"
+                }
+            ]
+        }
+    ],
+    "response_case0-10_3072537435.0": [
+        {
+            "Modelset_name": "13262_4938",
+            "avg_accuracy": 0.919,
+            "query_sharing_level": 0.96,
+            "final_score": 0.96,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 13262,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9224,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag",
+                    "window_type": "Jumping",
+                    "window_size": "6000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ]
+                    },
+                    "size": 43552,
+                    "algorithm": "SVM"
+                },
+                {
+                    "model_id": 4938,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9156,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag",
+                    "window_type": "Jumping",
+                    "window_size": "6000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ]
+                    },
+                    "size": 34528,
+                    "algorithm": "SVM"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "13262_4940",
+            "avg_accuracy": 0.911,
+            "query_sharing_level": 0.96,
+            "final_score": 0.96,
+            "number_of_models": 2,
+            "ml_models": [
+                {
+                    "model_id": 13262,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9224,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag",
+                    "window_type": "Jumping",
+                    "window_size": "6000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ]
+                    },
+                    "size": 43552,
+                    "algorithm": "SVM"
+                },
+                {
+                    "model_id": 4940,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.8996,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag",
+                    "window_type": "Jumping",
+                    "window_size": "6000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ]
+                    },
+                    "size": 19456,
+                    "algorithm": "Neural_Network"
+                }
+            ]
+        },
+        {
+            "Modelset_name": "13262_21600_4938",
+            "avg_accuracy": 0.9023,
+            "query_sharing_level": 0.96,
+            "final_score": 0.96,
+            "number_of_models": 3,
+            "ml_models": [
+                {
+                    "model_id": 13262,
+                    "type": true,
+                    "labels": [
+                        "Liegen"
+                    ],
+                    "accuracy": 0.9224,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag",
+                    "window_type": "Jumping",
+                    "window_size": "6000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ]
+                    },
+                    "size": 43552,
+                    "algorithm": "SVM"
+                },
+                {
+                    "model_id": 21600,
+                    "type": true,
+                    "labels": [
+                        "Grasen"
+                    ],
+                    "accuracy": 0.8555,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag",
+                    "window_type": "Jumping",
+                    "window_size": "6000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ]
+                    },
+                    "size": 8752507,
+                    "algorithm": "Random_Forest"
+                },
+                {
+                    "model_id": 4938,
+                    "type": false,
+                    "labels": [
+                        "Grasen",
+                        "Stehen",
+                        "Wiederkauen"
+                    ],
+                    "accuracy": 0.9156,
+                    "sensor_system": 1,
+                    "preprocessing": "accMag",
+                    "window_type": "Jumping",
+                    "window_size": "6000",
+                    "window_stride": "100",
+                    "features": {
+                        "accMag": [
+                            {
+                                "function": "median",
+                                "type": "double",
+                                "order": 0
+                            }
+                        ]
+                    },
+                    "size": 34528,
+                    "algorithm": "SVM"
+                }
+            ]
+        }
+    ]
+}
