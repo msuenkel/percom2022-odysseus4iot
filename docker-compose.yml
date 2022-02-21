@@ -23,7 +23,7 @@ services:
       restart: always
       depends_on:
          - backend
-   odysseus_webstudio_backend:
+   backend:
       container_name: backend
       image: msuenkel/percom2022-odysseus-webstudio-backend:latest
       networks:
