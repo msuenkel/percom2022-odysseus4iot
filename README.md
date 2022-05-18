@@ -1,5 +1,5 @@
 # PerCom2022-Artifact-Odysseus4IoT
-This software artifact was developed in combination with the paper publication [**Resource-Aware Classification via Model Management Enabled Data Stream Optimization**](https://doi.org/10.1109/PerCom53586.2022.9762391) as artifact submission [**Artifact: Resource-Aware Classification via Model Management Enabled Data Stream Optimization**](https://doi.org/10.1109/PerComWorkshops53856.2022.9767412).
+This software artifact was developed in combination with the paper publication [**Resource-Aware Classification via Model Management Enabled Data Stream Optimization**](https://doi.org/10.1109/PerCom53586.2022.9762391) as artifact submission [**Artifact: Resource-Aware Classification via Model Management Enabled Data Stream Optimization**](https://doi.org/10.1109/PerComWorkshops53856.2022.9767412). The recording of the presentation can be found [**here**](https://www.youtube.com/watch?v=fIuBGekEhlU).
 
 This artifact consists of a GitHub repository ([github.com/msuenkel/percom2022-odysseus4iot](https://github.com/msuenkel/percom2022-odysseus4iot)) and containerized software modules on DockerHub ([hub.docker.com/u/msuenkel](https://hub.docker.com/u/msuenkel))
 
